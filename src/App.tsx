@@ -4,6 +4,7 @@ import axios from 'axios';
 import Header from "./Header";
 import { ThemeProvider } from "@mui/material";
 import { appTheme } from './themes/theme';
+import Home from './Home/Home';
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
     <ThemeProvider theme={appTheme}>
     <Header/>
+    <Home/>
     </ThemeProvider>
     </div>
   )

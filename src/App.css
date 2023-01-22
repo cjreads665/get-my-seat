@@ -4,3 +4,13 @@
     /* border: black 1px solid; */
     margin-right: 0.5rem;
 }
+
+#home-page{
+    width:100%;
+
+}
+
+.ex{
+    position: absolute;
+    top:0;
+}
