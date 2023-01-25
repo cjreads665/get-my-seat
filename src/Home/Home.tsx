@@ -8,20 +8,31 @@ const Home = () => {
   const theme = useTheme();
   const [pnr, setPnr] = useState(0);
   return (
-    <Container sx={containerStyles}>
-      <Box sx={imageBox}>
+    <div>
+      <Box sx={{
+        position: "relative"
+      }} >
         <img src={homeImage} alt="" id="home-page" />
-        <Typography variant="h4" sx={typo} className="ex">
+        <Typography variant="h5" sx={{
+          position: "absolute",
+          bottom:0,
+          margin:2,
+          mb:4,
+          color: "white",
+          fontWeight: "bold"
+        }}>
           Get PNR status along with seat information
         </Typography>
       </Box>
-      <TextField
-        {...("hello" === "hello" ? { error: true } : {})} // if the condition is true add the error attribute
-        id="outlined-error"
-        label="PNR Number"
-        InputProps={{ type: "number" }}
-      />
-    </Container>
+      <Container sx={containerStyles}>
+        <TextField
+          {...("hello" === "hello" ? { error: true } : {})} // if the condition is true add the error attribute
+          id="outlined-error"
+          label="PNR Number"
+          InputProps={{ type: "number" }}
+        />
+      </Container>
+    </div>
   );
 };
 

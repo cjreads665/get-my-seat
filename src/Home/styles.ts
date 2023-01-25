@@ -7,14 +7,11 @@ export const containerStyles = {
 }
 
 export const typo = {
-    mt : "2rem",
     fontWeight: "bold",
-    position: "absolute",
-    color: "white"
+    color: "white",
 }
 
 export const imageBox = {
     position : "relative",
-    top: "30",
-    
+
 }
