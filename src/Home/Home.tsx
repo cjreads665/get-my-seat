@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/system";
 import React, { useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import homeImage from "../assets/home-page.jpg";
-import { containerStyles, typo, imageBox } from "./styles";
+import Form from "./Form"
 const Home = () => {
   const theme = useTheme();
   const [pnr, setPnr] = useState(0);
@@ -24,14 +24,7 @@ const Home = () => {
           Get PNR status along with seat information
         </Typography>
       </Box>
-      <Container sx={containerStyles}>
-        <TextField
-          {...("hello" === "hello" ? { error: true } : {})} // if the condition is true add the error attribute
-          id="outlined-error"
-          label="PNR Number"
-          InputProps={{ type: "number" }}
-        />
-      </Container>
+      <Form/>
     </div>
   );
 };

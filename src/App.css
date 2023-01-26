@@ -14,3 +14,8 @@
 .HomeImage{
     position : "relative",
 }
+
+.pnr-form{
+    border-color: blue !important;
+    color: aqua !important;
+}

@@ -4,9 +4,10 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import train from "../assets/train.svg";
+
 export default function ButtonAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1}}>
       <AppBar position="static">
         <Toolbar>
           <Box sx={{
